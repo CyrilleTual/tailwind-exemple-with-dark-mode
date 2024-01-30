@@ -1,6 +1,18 @@
+/* app>global.css */
+/* On enlève ces lignes  
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+/* Modification des lignes d'import des layers par : */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Puis on importe tous les fichiers personnels supplementaires*/
+@import'../styles/mycss.css';
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,18 +28,3 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

@@ -1,0 +1,5 @@
+@layer components {
+  .navBar-item{
+     @apply bg-slate-200 rounded-md  w-[+80px]  text-center m-3 selection:hover:bg-slate-50 hover:text-green-700  duration-200 cursor-pointer
+  }
+}
