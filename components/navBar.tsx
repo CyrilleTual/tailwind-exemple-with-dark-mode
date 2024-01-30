@@ -1,4 +1,5 @@
 import React from "react";
+import ToggleTheme from "./toggle-theme";
 
 export default function NavBar() {
   return (
@@ -10,12 +11,13 @@ export default function NavBar() {
         id="navigation"
         className="  absolute md:static   top-[100px] md:top-0 md:flex flex-col items-center  content-center  md:flex-row   transition-all ease-in-out duration-700 maskNav md:opacity-100 "
       >
-        <li className="navBar-item">Home</li>
-        <li className="navBar-item">Services</li>
-        <li className="navBar-item">Blog</li>
-        <li className="navBar-item">Gallery</li>
-        <li className="navBar-item">About</li>
-        <li className="navBar-item">Login</li>
+        <li className="navBar-item dark:text-black" >Home</li>
+        <li className="navBar-item dark:text-black">Services</li>
+        <li className="navBar-item dark:text-black">Blog</li>
+        <li className="navBar-item dark:text-black">Gallery</li>
+        <li className="navBar-item dark:text-black">About</li>
+        <li className="navBar-item dark:text-black">Login</li>
+        <ToggleTheme/>
       </ul>
     </nav>
   );
